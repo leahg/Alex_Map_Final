@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<!--[if lte IE 8 ]> <html lang="en" class="no-js oldie"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+  <title>Alex Map</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../_assets/css/Mapstyle.css">
+
+  <!-- == google's visualization library == -->
+  <script src="http://www.google.com/jsapi"></script>
+  <script>
+    google.load( 'visualization', '1', 
+      { 'packages': [ 'corechart', 'table', 'geomap' ] } );
+  </script>  
+
+  <!-- == google.maps == -->
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+  <!-- == script loader (modernizr) == -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  <script type="text/javascript" src="../_assets/js-lib/modernizr.js"></script>
+</head>
+
+<body id="maptest"> 
+  <div id="container">
+    <div class="map-container">
+      <h1>Map of Alexandria Rebuild</h1>
+      <div class="page-content"/>
+      </div>
+      <div id="map_canvas"></div><!-- End .map_canvas -->
+      <div id="sidebar">       
+        <div class="mod mod-type-selector">
+          <div class="inner">
+          </div>
+          <div class="controls">
+           <a href="#" class="reset">Reset Locations</a>
+          </div>
+        </div><!-- End .mod-type-selector -->
+      </div><!-- End .sidebar -->   
+    </div><!-- End .map-container -->
+    <form id="checklist">
+      <fieldset>
+        <div class="field-block field-settype">
+        </div>
+      </fieldset>
+    </form><!-- End #checklist -->
+  </div><!-- End #container -->
+
+  <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+  <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+  <![endif]-->
+</body>
+</html>
+
