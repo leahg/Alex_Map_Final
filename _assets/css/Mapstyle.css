@@ -72,7 +72,7 @@ h1, h2 {
     width: 190px;
     height: 420px;
     font-size: 11px;
-    background: #A2A7B8;
+    background: #A3A7BC;
     position: absolute;
     margin-left: 537px;
     clear: both;
@@ -184,12 +184,12 @@ h1, h2 {
     #container #checklist label.active {
       line-height:30px;
       text-align: center;
-      background: url(../img/imgongold.png); 
+      background: url(../img/imgon.png); 
       height: 30px;
       width: 170px;
       display: inline-block;
       color: white;
-      font-size: 13px;
+      font-size: 12px;
       margin-left: 3px;
       position: relative;
     }
@@ -199,11 +199,11 @@ h1, h2 {
       text-align: center;
       cursor: pointer;
       color: gray;
-      background: url(../img/imgoffsilver.png);
+      background: url(../img/imgoff.png);
       height: 30px;
       width: 170px;
        display: inline-block;
-      font-size: 13px;
+      font-size: 12px;
         margin-left: 3px;
         position: relative;
     }
